@@ -1,0 +1,16 @@
+services:
+
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        
+    OSW3\EntityEncrypt\:
+        resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/'
+
+    OSW3\EntityEncrypt\EventListener\EncryptionListener:
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            - { name: doctrine.event_listener, event: preUpdate }
+            - { name: doctrine.event_listener, event: postLoad }
