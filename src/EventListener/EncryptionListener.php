@@ -58,6 +58,11 @@ class EncryptionListener
     private function decryptProperties($entity): void
     {
         $reflectionClass = new ReflectionClass($entity);
+
+        if ($reflectionClass->getParentClass()) {
+            $reflectionClass = $reflectionClass->getParentClass();
+        }
+        
         foreach ($reflectionClass->getProperties() as $property) {
             $attributes = $property->getAttributes(Encrypted::class);
             if (!empty($attributes)) {
