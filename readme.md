@@ -49,6 +49,7 @@ class Message
 
     #[ORM\Column(type: Types::TEXT)]
     #[Encrypted] // Just add this Attribute
+    #[Encrypted(salt: 'my-salt')] // or add this Attribute with salt
     private ?string $secret = null;
 
     // ...
