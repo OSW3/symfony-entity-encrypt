@@ -11,6 +11,7 @@ class EntityEncryptBundle extends Bundle
     {
         $projectDir = $container->getParameter('kernel.project_dir');
         
+        // Generate the bundle config file in the project
         (new Configuration)->generateProjectConfig($projectDir);
     }
 }
