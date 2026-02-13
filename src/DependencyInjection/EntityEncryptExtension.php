@@ -24,7 +24,7 @@ class EntityEncryptExtension extends Extension implements PrependExtensionInterf
 		// --
 		
 		$config = $this->processConfiguration(new Configuration(), $configs);
-		$container->setParameter($this->getAlias(), $config);		
+		$container->setParameter(Configuration::NAME, $config);		
         
 
 		// Bundle config location
@@ -40,10 +40,6 @@ class EntityEncryptExtension extends Extension implements PrependExtensionInterf
 		$loader->load('services.yaml');
     }
 
-	public function getAlias(): string
-	{
-		return Configuration::NAME;
-	}
 
 	/**
 	 * Prepend some data to the global app configuration
