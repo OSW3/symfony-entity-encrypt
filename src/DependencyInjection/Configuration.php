@@ -14,7 +14,7 @@ class Configuration implements ConfigurationInterface
 {
 	/**
 	 * define the name of the configuration tree.
-	 * > /config/packages/breadcrumb.yaml
+	 * > /config/packages/osw3_symfony_entity_encrypt.yaml
 	 *
 	 * @var string
 	 */

@@ -40,6 +40,11 @@ class EntityEncryptExtension extends Extension implements PrependExtensionInterf
 		$loader->load('services.yaml');
     }
 
+	public function getAlias(): string
+	{
+		return Configuration::NAME;
+	}
+
 	/**
 	 * Prepend some data to the global app configuration
 	 *
