@@ -14,18 +14,18 @@ class Configuration implements ConfigurationInterface
 {
 	/**
 	 * define the name of the configuration tree.
-	 * > /config/packages/osw3_symfony_entity_encrypt.yaml
+	 * > /config/packages/entity_encrypt.yaml
 	 *
 	 * @var string
 	 */
-	public const NAME = "osw3_symfony_entity_encrypt";
+	public const NAME = "entity_encrypt";
 
 	/**
 	 * Define the translation domain
 	 *
 	 * @var string
 	 */
-	public const DOMAIN = 'osw3_symfony_entity_encrypt';
+	public const DOMAIN = 'entity_encrypt';
 
 	/**
 	 * Update and return the Configuration Builder
