@@ -18,7 +18,7 @@ class EntityEncryptExtension extends Extension implements PrependExtensionInterf
 	 *
 	 * @return void
 	 */
-	public function load(array $configs, ContainerBuilder $container)
+	public function load(array $configs, ContainerBuilder $container): void
     {
 		// Default Config
 		// --
@@ -47,7 +47,7 @@ class EntityEncryptExtension extends Extension implements PrependExtensionInterf
 	 *
 	 * @return void
 	 */
-	public function prepend(ContainerBuilder $container)
+	public function prepend(ContainerBuilder $container): void
     {
         // Extend Twig configuration
         // --

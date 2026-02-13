@@ -18,14 +18,14 @@ class Configuration implements ConfigurationInterface
 	 *
 	 * @var string
 	 */
-	public const string NAME = "entity_encrypt";
+	public const NAME = "entity_encrypt";
 
 	/**
 	 * Define the translation domain
 	 *
 	 * @var string
 	 */
-	public const string DOMAIN = 'entity_encrypt';
+	public const DOMAIN = 'entity_encrypt';
 
 	/**
 	 * Update and return the Configuration Builder
